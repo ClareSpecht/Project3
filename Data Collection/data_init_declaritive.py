@@ -1,25 +1,3 @@
-<<<<<<< HEAD
-from sqlalchemy import create_engine
-
-from sqlalchemy.ext.declarative import declarative_base
-
-import pandas as pd
-
-engine = create_engine("sqlite:///happiness_comparisons.sqlite")
-
-pet_table = pd.read_json('Raw Data Files/pet_data.json')
-
-pet_table.to_sql('pets', engine)
-
-income_table = pd.read_csv('Raw Data Files/IncomeData.csv')
-
-
-states_table = pd.read_csv('Raw Data Files/states.csv')
-
-states_table.to_sql('states',engine)
-
-income_table.to_sql('income',engine)
-=======
 import sqlalchemy
 from sqlalchemy import create_engine
 from sqlalchemy.ext.automap import automap_base
@@ -27,7 +5,7 @@ from sqlalchemy.ext.automap import automap_base
 import pandas as pd
 from sympy import false
 
-engine = create_engine("sqlite:///happiness_comparisons.sqlite")
+engine = create_engine("sqlite:///happiness_db.sqlite")
 
 
 #create dataframe tables to insert
@@ -55,5 +33,3 @@ states_table.to_sql('states',engine, if_exists='append')
 income_table.to_sql('income',engine, if_exists='append')
 
 pet_table.to_sql('pets', engine, if_exists='append')
->>>>>>> a9bcda45199efcca221bdd0870acef5ccdb50e39
-
