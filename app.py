@@ -10,7 +10,7 @@ import pandas as pd
 app = Flask(__name__)
 
 
-engine = create_engine('sqlite:///DataCollection/happiness_comparisons.sqlite', echo=False)
+engine = create_engine('sqlite:///Data Collection/happiness_comparisons.sqlite', echo=False)
 Base = automap_base()
 Base.prepare(engine, reflect=True)
 print(Base.classes.keys())
