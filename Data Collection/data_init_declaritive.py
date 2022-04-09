@@ -23,6 +23,8 @@ statepark_table = pd.read_csv('Raw Data Files/stateparks.csv')
 
 crime_table = pd.read_csv('Raw Data Files/crime_data.csv')
 
+happiness_table = pd.read_csv('Raw Data Files/happiness.csv')
+
 with engine.connect() as con:
     con.execute('''create TABLE pets("index" INTEGER, name VARCHAR PRIMARY KEY,  abbreviation VARCHAR(2),"pet ownership" VARCHAR,"dog ownership" VARCHAR,"cat ownership" VARCHAR);''')
 
@@ -44,6 +46,9 @@ with engine.connect() as con:
 with engine.connect() as con:
     con.execute('''create TABLE colleges('index' INTEGER, "StateABV" VARCHAR PRIMARY KEY,  Unviersity INTEGER, State VARCHAR, 'State Capital' VARCHAR, Region VARCHAR);''')
 
+with engine.connect() as con:
+    con.execute('''create TABLE happiness('index' INTEGER, 'Overall Rank' INTEGER,State VARCHAR,'Total Score' FLOAT,'Emotional & Physical Well-Being' FLOAT,'Work Environment' FLOAT,'Community & Environment' FLOAT);''')
+
 
 
 #add tables to database
@@ -60,3 +65,5 @@ statepark_table.to_sql('state_parks', engine, if_exists='append')
 crime_table.to_sql('crime', engine, if_exists='append')
 
 college_table.to_sql('colleges', engine, if_exists='append')
+
+happiness_table.to_sql('happiness', engine, if_exists='append')
