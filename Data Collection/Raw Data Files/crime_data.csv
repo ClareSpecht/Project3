@@ -1,0 +1,51 @@
+State,state_abv,State Capital,Region,Crime
+Alabama,AL,Montgomery,South,22322
+Alaska,AK,Juneau,West,6126
+Arizona,AZ,Phoenix,West,35980
+Arkansas,AR,Little Rock,South,20363
+California,CA,Sacramento,West,174026
+Colorado,CO,Denver,West,24570
+Connecticut,CT,Hartford,Northeast,6459
+Delaware,DE,Dover,Northeast,4262
+Florida,FL,Tallahassee,South,83368
+Georgia,GA,Atlanta,South,42850
+Hawaii,HI,Honolulu,West,3576
+Idaho,ID,Boise,West,4432
+Illinois,IL,Springfield,Midwest,53612
+Indiana,IN,Indianapolis,Midwest,24161
+Iowa,IA,Des Moines,Midwest,9601
+Kansas,KS,Topeka,Midwest,12385
+Kentucky,KY,Frankfort,South,11600
+Louisiana,LA,Baton Rouge,South,29704
+Maine,ME,Augusta,Northeast,1466
+Maryland,MD,Annapolis,Northeast,24215
+Massachusetts,MA,Boston,Northeast,21288
+Michigan,MI,Lansing,Midwest,47641
+Minnesota,MN,St. Paul,Midwest,15698
+Mississippi,MS,Jackson,South,8638
+Missouri,MO,Jefferson City,Midwest,33385
+Montana,MT,Helena,West,5077
+Nebraska,NE,Lincoln,Midwest,6473
+Nevada,NV,Carson City,West,14445
+New Hampshire,NH,Concord,Northeast,2000
+New Jersey,NJ,Trenton,Northeast,17353
+New Mexico,NM,Santa Fe,West,16393
+New York,NY,Albany,Northeast,70339
+North Carolina,NC,Raleigh,South,44451
+North Dakota,ND,Bismarck,Midwest,2518
+Ohio,OH,Columbus,Midwest,36104
+Oklahoma,OK,Oklahoma City,South,18255
+Oregon,OR,Salem,West,12380
+Pennsylvania,PA,Harrisburg,Northeast,49793
+Rhode Island,RI,Providence,Northeast,2440
+South Carolina,SC,Columbia,South,27691
+South Dakota,SD,Pierre,Midwest,4476
+Tennessee,TN,Nashville,South,46328
+Texas,TX,Austin,South,131084
+Utah,UT,Salt Lake City,West,8471
+Vermont,VT,Montpelier,Northeast,1081
+Virginia,VA,Richmond,South,17925
+Washington,WA,Olympia,West,22596
+West Virginia,WV,Charleston,South,6352
+Wisconsin,WI,Madison,Midwest,18861
+Wyoming,WY,Cheyenne,West,1364
