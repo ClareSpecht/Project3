@@ -53,3 +53,11 @@ states_table.to_sql('states',engine, if_exists='append')
 income_table.to_sql('income',engine, if_exists='append')
 
 pet_table.to_sql('pets', engine, if_exists='append')
+
+park_table.to_sql('parks', engine, if_exists='append')
+
+college_table.to_sql('colleges', engine, if_exists='append')
+
+statepark_table.to_sql('state_parks', engine, if_exists='append')
+
+crime_table.to_sql('crime', engine, if_exists='append')
