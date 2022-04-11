@@ -1,52 +1,52 @@
-Count,Type,State,State.1,State Capital,Region
-24, State Parks,Alabama,AL,Montgomery,South
-4, State Parks,Alaska,AK,Juneau,West
-16, State Parks,Arizona,AZ,Phoenix,West
-36, State Parks,Arkansas,AR,Little Rock,South
-109, State Parks,California,CA,Sacramento,West
-6, State Parks,Colorado,CO,Denver,West
-53, State Parks,Connecticut,CT,Hartford,Northeast
-15, State Parks,Delaware,DE,Dover,Northeast
-114, State Parks,Florida,FL,Tallahassee,South
-53, State Parks,Georgia,GA,Atlanta,South
-10, State Parks,Hawaii,HI,Honolulu,West
-23, State Parks,Idaho,ID,Boise,West
-69, State Parks,Illinois,IL,Springfield,Midwest
-26, State Parks,Indiana,IN,Indianapolis,Midwest
-63, State Parks,Iowa,IA,Des Moines,Midwest
-31, State Parks,Kansas,KS,Topeka,Midwest
-38, State Parks,Kentucky,KY,Frankfort,South
-20, State Parks,Louisiana,LA,Baton Rouge,South
-34, State Parks,Maine,ME,Augusta,Northeast
-37, State Parks,Maryland,MD,Annapolis,Northeast
-24, State Parks,Massachusetts,MA,Boston,Northeast
-74, State Parks,Michigan,MI,Lansing,Midwest
-52, State Parks,Minnesota,MN,St. Paul,Midwest
-23, State Parks,Mississippi,MS,Jackson,South
-38, State Parks,Missouri,MO,Jefferson City,Midwest
-38, State Parks,Montana,MT,Helena,West
-9, State Parks,Nebraska,NE,Lincoln,Midwest
-20, State Parks,Nevada,NV,Carson City,West
-20, State Parks,New Hampshire,NH,Concord,Northeast
-34, State Parks,New Jersey,NJ,Trenton,Northeast
-28, State Parks,New Mexico,NM,Santa Fe,West
-89, State Parks,New York,NY,Albany,Northeast
-35, State Parks,North Carolina,NC,Raleigh,South
-7, State Parks,North Dakota,ND,Bismarck,Midwest
-77, State Parks,Ohio,OH,Columbus,Midwest
-35, State Parks,Oklahoma,OK,Oklahoma City,South
-111, State Parks,Oregon,OR,Salem,West
-111, State Parks,Pennsylvania,PA,Harrisburg,Northeast
-9, State Parks,Rhode Island,RI,Providence,Northeast
-40, State Parks,South Carolina,SC,Columbia,South
-15, State Parks,South Dakota,SD,Pierre,Midwest
-31, State Parks,Tennessee,TN,Nashville,South
-76, State Parks,Texas,TX,Austin,South
-29, State Parks,Utah,UT,Salt Lake City,West
-12, State Parks,Vermont,VT,Montpelier,Northeast
-24, State Parks,Virginia,VA,Richmond,South
-131, State Parks,Washington,WA,Olympia,West
-29, State Parks,West Virginia,WV,Charleston,South
-42, State Parks,Wisconsin,WI,Madison,Midwest
-13, State Parks,Wyoming,WY,Cheyenne,West
-,National Memorial,District of Columbia,DC,Washington,Northeast
+0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,State,State.1,State Capital,Region
+{' State Parks': '24'},{' State Forests': '3'},{' State Wildlife Management Areas': '4'},{'National Park': 1},{' National Forests': '4'},{' National Historic Sites': '2'},{'National Historic Park': 1},{' National Monuments': '2'},{' National Wildlife Refuges': '10'},,,,,,,,,,,Alabama,AL,Montgomery,South
+{' State Parks': '4'},{' National Parks': '2'},{' National Forests': '2'},{' National Historic Parks': '2'},{' National Monuments': '2'},{' National Wildlife Refuges': '22'},{'National Recreation Trail': 1},{' National Park and Preserves': '7'},,,,,,,,,,,,Alaska,AK,Juneau,West
+{' State Parks': '16'},{'State Recreation Area': 1},{'State Historic Site': 1},{'State Fish Hatchery': 1},{'State Wildlife Area': 1},{' National Parks': '4'},{' National Forests': '8'},{'National Memorial': 1},{'National Historic Site': 1},{' National Monuments': '9'},{'National Wildlife Area': 1},{' National Wildlife Refuges': '7'},{'National Recreation Area': 1},{' National Recreation Trails': '4'},{'Metro and City Parks': 1},,,,,Arizona,AZ,Phoenix,West
+{' State Parks': '36'},{'State Forest': 1},{'State Historic Site': 1},{' State Fish Hatcherys': '2'},{'State Natural Area': 1},{' State Wildlife Management Areas': '12'},{'National Park': 1},{' National Forests': '3'},{'National Memorial': 1},{' National Historic Sites': '3'},{' National Wildlife Refuges': '9'},{'National Recreation Trail': 1},,,,,,,,Arkansas,AR,Little Rock,South
+{' State Parks': '109'},{' State Recreation Areas': '9'},{' State Forests': '6'},{' State Historic Sites': '5'},{' State Fish Hatcherys': '5'},{'State Nature Preserve': 1},{' State Reserves': '10'},{' State Wildlife Areas': '10'},{' National Parks': '9'},{' National Forests': '19'},{'National Memorial': 1},{' National Historic Sites': '3'},{' National Monuments': '5'},{' National Wildlife Refuges': '31'},{' National Recreation Areas': '3'},{' National Recreation Trails': '6'},{'National Seashore': 1},{'National Park and Preserve': 1},{'Metro and City Parks': 1},California,CA,Sacramento,West
+{' State Parks': '6'},{' State Forests': '2'},{'State Fish Hatchery': 1},{' State Wildlife Areas': '5'},{' National Parks': '3'},{' National Forests': '11'},{'National Historic Landmark': 1},{'National Monument': 1},{' National Wildlife Refuges': '4'},{' National Recreation Areas': '2'},,,,,,,,,,Colorado,CO,Denver,West
+{' State Parks': '53'},{' State Forests': '25'},{' State Wildlife Areas': '2'},{'Metro and City Parks': 1},,,,,,,,,,,,,,,,Connecticut,CT,Hartford,Northeast
+{' State Parks': '15'},{' State Forests': '2'},{'State Wildlife Area': 1},{' State Wildlife Management Areas': '3'},{' National Wildlife Refuges': '2'},,,,,,,,,,,,,,,Delaware,DE,Dover,Northeast
+{' State Parks': '114'},{' State Forests': '5'},{'State Memorial': 1},{' State Historic Sites': '17'},{' State Reserves': '3'},{' State Preserves': '19'},{' National Parks': '3'},{' National Forests': '3'},{' National Memorials': '2'},{'National Historic Landmark': 1},{'National Monument': 1},{' National Wildlife Refuges': '20'},{'National Seashore': 1},,,,,,,Florida,FL,Tallahassee,South
+{' State Parks': '53'},{'State Forest': 1},{'State Memorial': 1},{' State Historic Sites': '15'},{'State Nature Preserve': 1},{'State Wildlife Management Area': 1},{'State Wildlife Refuge': 1},{' National Forests': '2'},{'National Historic Site': 1},{' National Wildlife Refuges': '9'},{'National Recreation Area': 1},{'National Seashore': 1},{' Army Corps of Engineerss': '2'},,,,,,,Georgia,GA,Atlanta,South
+{' State Parks': '10'},{' National Parks': '2'},{'National Memorial': 1},{' National Historic Parks': '2'},,,,,,,,,,,,,,,,Hawaii,HI,Honolulu,West
+{' State Parks': '23'},{'State Forest': 1},{' State Fish Hatcherys': '2'},{'National Park': 1},{' National Forests': '10'},{'National Historic Site': 1},{'National Historic Park': 1},{'National Monument': 1},{' National Wildlife Refuges': '6'},{'National Recreation Area': 1},{' National Recreation Trails': '5'},{' Metro and City Parkss': '2'},,,,,,,,Idaho,ID,Boise,West
+{' State Parks': '69'},{' State Recreation Areas': '11'},{' State Forests': '6'},{' State Memorials': '2'},{'State Nature Preserve': 1},{' State Natural Areas': '5'},{' State Wildlife Areas': '17'},{'State Wildlife Management Area': 1},{'National Forest': 1},{' National Historic Sites': '2'},{' National Wildlife Refuges': '3'},,,,,,,,,Illinois,IL,Springfield,Midwest
+{' State Parks': '26'},{' State Forests': '15'},{' State Memorials': '4'},{'State Historic Site': 1},{'State Fishing Area': 1},{'State Fish Hatchery': 1},{'State Nature Preserve': 1},{' State Wildlife Areas': '13'},{'National Park': 1},{'National Forest': 1},{'National Memorial': 1},{'National Historic Park': 1},{'National Wildlife Refuge': 1},{'Metro and City Parks': 1},,,,,,Indiana,IN,Indianapolis,Midwest
+{' State Parks': '63'},{' State Forests': '5'},{' State Wildlife Areas': '3'},{' State Wildlife Management Areas': '7'},{'National Historic Site': 1},{'National Monument': 1},{' National Wildlife Refuges': '3'},{'Metro and City Parks': 1},,,,,,,,,,,,Iowa,IA,Des Moines,Midwest
+{' State Parks': '31'},{' State Wildlife Areas': '32'},{' State Wildlife Management Areas': '3'},{'National Park': 1},{' National Historic Sites': '4'},{' National Wildlife Refuges': '3'},,,,,,,,,,,,,,Kansas,KS,Topeka,Midwest
+{' State Parks': '38'},{' State Forests': '3'},{' State Historic Sites': '12'},{'National Park': 1},{'National Forest': 1},{' National Historic Parks': '2'},{' National Wildlife Refuges': '2'},,,,,,,,,,,,,Kentucky,KY,Frankfort,South
+{' State Parks': '20'},{'State Forest': 1},{' State Historic Sites': '2'},{' State Wildlife Management Areas': '9'},{'State Wildlife Refuge': 1},{' National Parks': '2'},{'National Forest': 1},{'National Historic Park': 1},{' National Wildlife Refuges': '8'},{'Metro and City Parks': 1},,,,,,,,,,Louisiana,LA,Baton Rouge,South
+{' State Parks': '34'},{'National Park': 1},{' National Wildlife Refuges': '8'},,,,,,,,,,,,,,,,,Maine,ME,Augusta,Northeast
+{' State Parks': '37'},{' State Forests': '5'},{' State Wildlife Management Areas': '6'},{' National Parks': '4'},{'National Historic Site': 1},{'National Historic Park': 1},{' National Wildlife Refuges': '4'},{'National Seashore': 1},,,,,,,,,,,,Maryland,MD,Annapolis,Northeast
+{' State Parks': '24'},{' State Forests': '38'},{'State Wildlife Management Area': 1},{'National Park': 1},{' National Historic Sites': '6'},{' National Historic Parks': '3'},{' National Wildlife Refuges': '4'},{'National Seashore': 1},,,,,,,,,,,,Massachusetts,MA,Boston,Northeast
+{' State Parks': '74'},{' State Forests': '12'},{'State Reserve': 1},{'State Wildlife Area': 1},{'State Wildlife Management Area': 1},{' National Parks': '2'},{' National Forests': '4'},{'National Historic Site': 1},{'National Historic Park': 1},{' National Wildlife Refuges': '4'},,,,,,,,,,Michigan,MI,Lansing,Midwest
+{' State Parks': '52'},{' State Forests': '11'},{' State Wildlife Management Areas': '9'},{'National Park': 1},{' National Forests': '2'},{' National Wildlife Refuges': '6'},,,,,,,,,,,,,,Minnesota,MN,St. Paul,Midwest
+{' State Parks': '23'},{' State Wildlife Areas': '2'},{' State Wildlife Management Areas': '8'},{' National Forests': '6'},{'National Historic Site': 1},{' National Wildlife Refuges': '9'},{'National Seashore': 1},,,,,,,,,,,,,Mississippi,MS,Jackson,South
+{' State Parks': '38'},{' State Forests': '7'},{' State Historic Sites': '7'},{'State Natural Area': 1},{' State Wildlife Areas': '12'},{' State Wildlife Management Areas': '6'},{'State Wildlife Refuge': 1},{'National Forest': 1},{' National Historic Sites': '2'},{' National Wildlife Refuges': '5'},{' Metro and City Parkss': '3'},,,,,,,,,Missouri,MO,Jefferson City,Midwest
+{' State Parks': '38'},{'State Wildlife Management Area': 1},{' National Parks': '2'},{' National Forests': '10'},{' National Historic Sites': '2'},{'National Monument': 1},{' National Wildlife Refuges': '9'},{'National Recreation Area': 1},{'National Recreation Trail': 1},,,,,,,,,,,Montana,MT,Helena,West
+{' State Parks': '9'},{' State Wildlife Management Areas': '11'},{' National Forests': '2'},{'National Historic Site': 1},{' National Monuments': '2'},{' National Wildlife Refuges': '6'},{'National Recreation Area': 1},,,,,,,,,,,,,Nebraska,NE,Lincoln,Midwest
+{' State Parks': '20'},{'State Recreation Area': 1},{'State Fish Hatchery': 1},{' State Wildlife Management Areas': '3'},{'National Park': 1},{' National Forests': '7'},{'National Monument': 1},{'National Wildlife Area': 1},{' National Wildlife Refuges': '9'},{'National Recreation Area': 1},{'National Recreation Trail': 1},,,,,,,,,Nevada,NV,Carson City,West
+{' State Parks': '20'},{' State Forests': '5'},{'National Park': 1},{'National Forest': 1},{'National Wildlife Refuge': 1},,,,,,,,,,,,,,,New Hampshire,NH,Concord,Northeast
+{' State Parks': '34'},{' State Forests': '11'},{'State Airport': 1},{'State Wildlife Management Area': 1},{' National Parks': '2'},{'National Historic Site': 1},{'National Historic Park': 1},{' National Wildlife Refuges': '5'},{'National Recreation Area': 1},,,,,,,,,,,New Jersey,NJ,Trenton,Northeast
+{' State Parks': '28'},{'State Fish Hatchery': 1},{' National Parks': '3'},{' National Forests': '5'},{' National Historic Landmarks': '3'},{'National Historic Site': 1},{' National Historic Parks': '2'},{' National Monuments': '3'},{' National Wilderness Areas': '3'},{' National Wildlife Refuges': '8'},{'National Recreation Area': 1},{'National Recreation Trail': 1},{'National Natural Area': 1},{'Metro and City Parks': 1},,,,,,New Mexico,NM,Santa Fe,West
+{' State Parks': '89'},{' State Forests': '3'},{'State Wildlife Area': 1},{'State Wildlife Management Area': 1},{'National Park': 1},{' National Historic Sites': '5'},{'National Historic Park': 1},{' National Monuments': '4'},{' National Wildlife Refuges': '5'},{'National Recreation Area': 1},{'National Seashore': 1},,,,,,,,,New York,NY,Albany,Northeast
+{' State Parks': '35'},{'State Recreation Area': 1},{' State Forests': '2'},{'State Fish Hatchery': 1},{' National Parks': '2'},{' National Forests': '4'},{'National Memorial': 1},{' National Historic Sites': '2'},{' National Wildlife Refuges': '8'},{' National Seashores': '2'},{'Army Corps of Engineers': 1},,,,,,,,,North Carolina,NC,Raleigh,South
+{' State Parks': '7'},{'State Historic Site': 1},{'National Memorial': 1},{' National Historic Sites': '2'},{' National Wildlife Refuges': '16'},,,,,,,,,,,,,,,North Dakota,ND,Bismarck,Midwest
+{' State Parks': '77'},{' State Forests': '17'},{' State Memorials': '20'},{' State Nature Preserves': '4'},{' State Reserves': '2'},{' State Wildlife Areas': '14'},{'National Park': 1},{'National Forest': 1},{' National Memorials': '2'},{' National Historic Parks': '2'},{' National Wildlife Refuges': '3'},{' Metro and City Parkss': '3'},,,,,,,,Ohio,OH,Columbus,Midwest
+{' State Parks': '35'},{' State Fish Hatcherys': '3'},{' State Wildlife Management Areas': '2'},{' National Historic Sites': '2'},{'National Wildlife Area': 1},{' National Wildlife Refuges': '4'},{' National Recreation Areas': '2'},{' Metro and City Parkss': '14'},,,,,,,,,,,,Oklahoma,OK,Oklahoma City,South
+{' State Parks': '111'},{' State Forests': '3'},{' State Fish Hatcherys': '6'},{'State Natural Area': 1},{'State Nursery': 1},{'National Park': 1},{' National Forests': '14'},{'National Memorial': 1},{'National Historic Site': 1},{' National Monuments': '2'},{' National Wildlife Refuges': '16'},{' National Recreation Areas': '2'},{' National Recreation Trails': '3'},,,,,,,Oregon,OR,Salem,West
+{' State Parks': '111'},{' State Forests': '19'},{'National Park': 1},{'National Forest': 1},{' National Memorials': '2'},{' National Historic Sites': '5'},{' National Historic Parks': '3'},{'National Wildlife Refuge': 1},{'National Recreation Area': 1},{'Metro and City Parks': 1},,,,,,,,,,Pennsylvania,PA,Harrisburg,Northeast
+{' State Parks': '9'},{'National Park': 1},{'National Memorial': 1},{'National Historic Site': 1},{' National Wildlife Refuges': '4'},,,,,,,,,,,,,,,Rhode Island,RI,Providence,Northeast
+{' State Parks': '40'},{' State Forests': '4'},{'State Historic Site': 1},{'State Preserve': 1},{' National Parks': '2'},{'National Forest': 1},{' National Historic Sites': '2'},{' National Wildlife Refuges': '5'},,,,,,,,,,,,South Carolina,SC,Columbia,South
+{' State Parks': '15'},{' National Parks': '2'},{'National Forest': 1},{'National Memorial': 1},{'National Historic Site': 1},{'National Monument': 1},{' National Wildlife Refuges': '4'},,,,,,,,,,,,,South Dakota,SD,Pierre,Midwest
+{' State Parks': '31'},{' State Forests': '10'},{' State Scenic Rivers': '3'},{' State Natural Areas': '3'},{' State Wildlife Management Areas': '3'},{'National Park': 1},{'National Forest': 1},{'National Historic Site': 1},{'National Historic Park': 1},{' National Wildlife Refuges': '8'},,,,,,,,,,Tennessee,TN,Nashville,South
+{' State Parks': '76'},{' State Forests': '2'},{' State Historic Sites': '2'},{'State Fish Hatchery': 1},{' State Natural Areas': '2'},{' National Parks': '3'},{' National Forests': '4'},{'National Memorial': 1},{'National Historic Site': 1},{'National Historic Park': 1},{'National Monument': 1},{' National Wildlife Refuges': '10'},{' National Recreation Areas': '2'},{'National Seashore': 1},,,,,,Texas,TX,Austin,South
+{' State Parks': '29'},{'State Reserve': 1},{' National Parks': '5'},{' National Forests': '4'},{' National Historic Sites': '2'},{' National Monuments': '4'},{' National Wildlife Refuges': '2'},{' National Recreation Areas': '4'},{'Metro and City Parks': 1},,,,,,,,,,,Utah,UT,Salt Lake City,West
+{' State Parks': '12'},{' State Forests': '7'},{'National Forest': 1},{'National Wildlife Refuge': 1},{'National Recreation Area': 1},,,,,,,,,,,,,,,Vermont,VT,Montpelier,Northeast
+{' State Parks': '24'},{' State Forests': '5'},{' State Fish Hatcherys': '2'},{' State Wildlife Management Areas': '2'},{' National Parks': '7'},{' National Forests': '2'},{' National Historic Sites': '2'},{' National Historic Parks': '3'},{' National Monuments': '2'},{'National Wildlife Refuge': 1},{'National Recreation Area': 1},,,,,,,,,Virginia,VA,Richmond,South
+{' State Parks': '131'},{' State Recreation Areas': '6'},{' State Forests': '2'},{'State Natural Area': 1},{'State Wildlife Area': 1},{' National Parks': '3'},{' National Forests': '7'},{' National Historic Sites': '3'},{' National Historic Parks': '2'},{' National Wildlife Refuges': '17'},{' National Recreation Areas': '3'},{' Metro and City Parkss': '5'},,,,,,,,Washington,WA,Olympia,West
+{' State Parks': '29'},{' State Forests': '9'},{'State Fish Hatchery': 1},{'National Park': 1},{'National Forest': 1},{'National Historic Park': 1},{' National Recreation Areas': '2'},{'National Park and Preserve': 1},{' Army Corps of Engineerss': '2'},,,,,,,,,,,West Virginia,WV,Charleston,South
+{' State Parks': '42'},{' State Forests': '8'},{' State Fishery Areas': '3'},{'State Fish Hatchery': 1},{'Trail': 1},{' State Wildlife Areas': '7'},{' State Wildlife Management Areas': '3'},{'State Wildlife Refuge': 1},{' National Forests': '2'},{' National Wildlife Refuges': '5'},{' Metro and City Parkss': '2'},,,,,,,,,Wisconsin,WI,Madison,Midwest
+{' State Parks': '13'},{' National Parks': '2'},{' National Forests': '5'},{' National Historic Sites': '2'},{' National Wildlife Refuges': '4'},{' National Recreation Areas': '2'},{'National Recreation Trail': 1},,,,,,,,,,,,,Wyoming,WY,Cheyenne,West
+{'National Memorial': 1},{' National Historic Sites': '2'},,,,,,,,,,,,,,,,,,District of Columbia,DC,Washington,Northeast
