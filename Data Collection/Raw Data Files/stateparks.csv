@@ -1,0 +1,52 @@
+Count,Type,State,State.1,State Capital,Region
+24, State Parks,Alabama,AL,Montgomery,South
+4, State Parks,Alaska,AK,Juneau,West
+16, State Parks,Arizona,AZ,Phoenix,West
+36, State Parks,Arkansas,AR,Little Rock,South
+109, State Parks,California,CA,Sacramento,West
+6, State Parks,Colorado,CO,Denver,West
+53, State Parks,Connecticut,CT,Hartford,Northeast
+15, State Parks,Delaware,DE,Dover,Northeast
+114, State Parks,Florida,FL,Tallahassee,South
+53, State Parks,Georgia,GA,Atlanta,South
+10, State Parks,Hawaii,HI,Honolulu,West
+23, State Parks,Idaho,ID,Boise,West
+69, State Parks,Illinois,IL,Springfield,Midwest
+26, State Parks,Indiana,IN,Indianapolis,Midwest
+63, State Parks,Iowa,IA,Des Moines,Midwest
+31, State Parks,Kansas,KS,Topeka,Midwest
+38, State Parks,Kentucky,KY,Frankfort,South
+20, State Parks,Louisiana,LA,Baton Rouge,South
+34, State Parks,Maine,ME,Augusta,Northeast
+37, State Parks,Maryland,MD,Annapolis,Northeast
+24, State Parks,Massachusetts,MA,Boston,Northeast
+74, State Parks,Michigan,MI,Lansing,Midwest
+52, State Parks,Minnesota,MN,St. Paul,Midwest
+23, State Parks,Mississippi,MS,Jackson,South
+38, State Parks,Missouri,MO,Jefferson City,Midwest
+38, State Parks,Montana,MT,Helena,West
+9, State Parks,Nebraska,NE,Lincoln,Midwest
+20, State Parks,Nevada,NV,Carson City,West
+20, State Parks,New Hampshire,NH,Concord,Northeast
+34, State Parks,New Jersey,NJ,Trenton,Northeast
+28, State Parks,New Mexico,NM,Santa Fe,West
+89, State Parks,New York,NY,Albany,Northeast
+35, State Parks,North Carolina,NC,Raleigh,South
+7, State Parks,North Dakota,ND,Bismarck,Midwest
+77, State Parks,Ohio,OH,Columbus,Midwest
+35, State Parks,Oklahoma,OK,Oklahoma City,South
+111, State Parks,Oregon,OR,Salem,West
+111, State Parks,Pennsylvania,PA,Harrisburg,Northeast
+9, State Parks,Rhode Island,RI,Providence,Northeast
+40, State Parks,South Carolina,SC,Columbia,South
+15, State Parks,South Dakota,SD,Pierre,Midwest
+31, State Parks,Tennessee,TN,Nashville,South
+76, State Parks,Texas,TX,Austin,South
+29, State Parks,Utah,UT,Salt Lake City,West
+12, State Parks,Vermont,VT,Montpelier,Northeast
+24, State Parks,Virginia,VA,Richmond,South
+131, State Parks,Washington,WA,Olympia,West
+29, State Parks,West Virginia,WV,Charleston,South
+42, State Parks,Wisconsin,WI,Madison,Midwest
+13, State Parks,Wyoming,WY,Cheyenne,West
+,National Memorial,District of Columbia,DC,Washington,Northeast

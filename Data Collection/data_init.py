@@ -1,3 +1,4 @@
+
 from sqlalchemy import create_engine
 
 from sqlalchemy.ext.declarative import declarative_base
@@ -18,4 +19,3 @@ states_table = pd.read_csv('Raw Data Files/states.csv')
 states_table.to_sql('states',engine)
 
 income_table.to_sql('income',engine)
-
