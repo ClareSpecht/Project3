@@ -68,7 +68,23 @@ def v1colleges():
     college_info = engine.execute('SELECT * FROM colleges')
     return json.dumps([dict(college) for college in college_info])
 
+@app.route('/api/v1/happiness')
+def v1happiness():
+    happy_info = []
+    happy_info = engine.execute('SELECT * FROM happiness')
+    return json.dumps([dict(happy) for happy in happy_info])
 
+@app.route('/api/v1/parks/all')
+def v1parkall():
+    park_info = []
+    park_info = engine.execute('SELECT * FROM all_parks')
+    return json.dumps([dict(park) for park in park_info])
+
+@app.route('/api/v1/parks/state')
+def v1parkstate():
+    park_info = []
+    park_info = engine.execute('SELECT * FROM state_parks')
+    return json.dumps([dict(park) for park in park_info])
 
 if __name__ == "__main__":
     app.run(host= 'localhost',port =5000,debug=True)
