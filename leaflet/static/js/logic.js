@@ -17,19 +17,19 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 // L.geoJson(statesData).addTo(map);
 
 function getColor(d) {
-    return d > 1000 ? '#800026' :
-        d > 500 ? '#BD0026' :
-            d > 200 ? '#E31A1C' :
-                d > 100 ? '#FC4E2A' :
-                    d > 50 ? '#FD8D3C' :
-                        d > 20 ? '#FEB24C' :
-                            d > 10 ? '#FED976' :
-                                '#FFEDA0';
-}
+    return d > 70 ? '#ebf4ff' :
+        d > 65 ? '#cdd4ed' :
+            d > 60 ? '#afb3dc' :
+                d > 55 ? '#9193ca' :
+                    d > 50 ? '#7372b9' :
+                        d > 45 ? '#5552a7' :
+                            d > 40 ? '#373196' :
+                                '#191184';
+
 
 function style(feature) {
     return {
-        fillColor: getColor(feature.properties.density),
+        fillColor: getColor(feature.properties["Happiness Score"]),
         weight: 2,
         opacity: 1,
         color: 'white',
@@ -74,7 +74,7 @@ function zoomToFeature(e) {
     map.fitBounds(e.target.getBounds());
 }
 
-geojson = L.geoJson(statesData, {
+geojson = L.geoJson(parksHapiness, {
     style: style,
     onEachFeature: onEachFeature
 }).addTo(map);
