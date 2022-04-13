@@ -25,7 +25,7 @@ function getColor(d) {
                         d > 45 ? '#5552a7' :
                             d > 40 ? '#373196' :
                                 '#191184';
-}
+
 
 function style(feature) {
     return {
@@ -62,12 +62,11 @@ function resetHighlight(e) {
     geojson.resetStyle(e.target);
 }
 
-
 function onEachFeature(feature, layer) {
     layer.on({
         mouseover: highlightFeature,
         mouseout: resetHighlight,
-        click: zoomToFeature,
+        click: zoomToFeature
     });
 }
 
