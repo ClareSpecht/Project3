@@ -45,7 +45,7 @@ function getColorhappy(d) {
 
 function happystyle(feature) {
     return {
-        fillColor: getColorhappy(feature.properties["Happiness Score"]),
+        fillColor: getColorhappy(feature.properties["Happiness_Score"]),
         weight: 2,
         opacity: 1,
         color: 'white',
