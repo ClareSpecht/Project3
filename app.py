@@ -25,22 +25,11 @@ states = Base.classes.states
 
 @app.route('/')
 def home():
-    return render_template( f"""Available Routes:\n
-    """ f"""/api/v1/pets
-
-        """ f"""/api/v1/happiness
-
-        """ f"""/api/v1/income
-
-        """ f"""/api/v1/crime
-
-        """
-        f"""/api/v1"""
-    )
+    return render_template('index.html')
 
 @app.route('/api/v1')
 def apiv1():
-    return 'Info about Version 1'
+    return render_template('info.html')
 
 @app.route('/api/v1/pets')
 def v1pets():
