@@ -9,7 +9,7 @@ page = requests.get(url).text
 soup = bs(page,'html.parser')
 
 list_items = soup.find_all('li')
-file = open('Resources/states_titlecase.json')
+file = open('../Resources/states_titlecase.json')
 states = json.load(file)
 file.close()
 for state in states:

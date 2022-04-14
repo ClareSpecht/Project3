@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 import sqlalchemy
 from sqlalchemy import create_engine
 from sqlalchemy.ext.automap import automap_base
@@ -25,7 +25,7 @@ states = Base.classes.states
 
 @app.route('/')
 def home():
-    return ( f"""Available Routes:\n
+    return render_template( f"""Available Routes:\n
     """ f"""/api/v1/pets
 
         """ f"""/api/v1/happiness
