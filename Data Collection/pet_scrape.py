@@ -1,4 +1,3 @@
-from unicodedata import numeric
 from urllib import request
 from bs4 import BeautifulSoup as bs
 import requests, json
@@ -19,21 +18,11 @@ for state in states:
         if '%' in li.text:
             if state['name'] in li.text:
                 if 'pet' in li.text:
-                    temp = li.text.split("%")[0].split(' ')[-1]
-                    print(temp)
-                    if temp.isnumeric() :
-                        if float(temp)<100:
-                            states[states.index(state)]['pet ownership'] = temp
+                    states[states.index(state)]['pet ownership'] = li.text.split("%")[0].split(' ')[-1]
                 if 'dog' in li.text:
-                    temp = li.text.split("%")[0].split(' ')[-1]
-                    if temp.isnumeric() :
-                        if float(temp)<100:
-                            states[states.index(state)]['dog ownership'] = temp
+                    states[states.index(state)]['dog ownership'] = li.text.split("%")[0].split(' ')[-1]
                 if 'cat' in li.text:
-                    temp = li.text.split("%")[0].split(' ')[-1]
-                    if temp.isnumeric() :
-                        if float(temp)<100:
-                            states[states.index(state)]['cat ownership'] = temp
+                    states[states.index(state)]['cat ownership'] = li.text.split("%")[0].split(' ')[-1]
 
 with open('pet_data.json','w') as f:
     json.dump(states, f)

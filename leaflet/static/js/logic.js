@@ -87,12 +87,12 @@ var petjson = L.geoJson(parksHapiness, {
 
 // Dog Layer
 function getColordogs(d) {
-    return d > 50 ? '#ff0018' :
-        d > 45 ? '#ff5b45' :
-            d > 40 ? '#ff8971' :
-                d > 35 ? '#ffb29f' :
-                    d > 30 ? '#ffd9ce' :
-                        '#ffffff';
+    return d > 50 ? '#9603fd' :
+        d > 45 ? '#b253ff' :
+            d > 40 ? '#ca81ff' :
+                d > 35 ? '#deabff' :
+                    d > 30 ? '#efd5ff' :
+                        '#fefefe';
 }
 
 function dogstyle(feature) {
@@ -113,12 +113,12 @@ var dogjson = L.geoJson(parksHapiness, {
 
 // Cat Layer
 function getColorcats(d) {
-    return d > 40 ? '#ff0018' :
-        d > 35 ? '#ff5b45' :
-            d > 30 ? '#ff8971' :
-                d > 25 ? '#ffb29f' :
-                    d > 20 ? '#ffd9ce' :
-                        '#ffffff';
+    return d > 40 ? '#fd03dd' :
+        d > 35 ? '#ff61e4' :
+            d > 30 ? '#ff8feb' :
+                d > 25 ? '#ffb6f2' :
+                    d > 20 ? '#ffdbf8' :
+                        '#fefefe';
 }
 
 function catstyle(feature) {
@@ -246,26 +246,164 @@ var parkjson = L.geoJson(parksHapiness, {
     onEachFeature: onEachFeature
 });
 
-// Legend - Currently only set up for Happiness scale, not dynamic w/ layers
-var legend = L.control({position: 'bottomright'});
+// Happiness Legend
+var happinesslegend = L.control({position: 'bottomright'});
 
-legend.onAdd = function () {
+happinesslegend.onAdd = function () {
 
     var div = L.DomUtil.create('div', 'info legend'),
-        grades = [35, 40, 45, 50, 55, 60, 65, 70],
-        labels = [];
+        grades = [1, 40, 45, 50, 55, 60, 65, 70];
     
+    div.innerHTML += '<p><strong> Happiness Score % </strong></p>';
     // loop through our density intervals and generate a label with a colored square for each interval
     for (var i = 0; i < grades.length; i++) {
         div.innerHTML +=
             '<i style="background:' + getColorhappy(grades[i] + 1) + '"></i> ' +
-            grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' + '<br>': '+');
+            (grades[i-1] ? grades[i]: '<'+ grades[i+1]+ '<br>' + '<br>') + (grades[i + 1] && grades[i-1] ?  '&ndash;' + grades[i + 1] + '<br>' + '<br>': (grades[i-1] ?'+':''));
     }
 
     return div;
 };
 
-legend.addTo(map);
+// Pets Legend
+var petslegend = L.control({position: 'bottomright'});
+
+petslegend.onAdd = function () {
+
+    var div = L.DomUtil.create('div', 'info legend'),
+        grades = [1, 50, 55, 60, 65, 70],
+        labels = [];
+    
+    div.innerHTML += '<p><strong> Pet Ownership % </strong></p>';
+    // loop through our density intervals and generate a label with a colored square for each interval
+    for (var i = 0; i < grades.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + getColorpets(grades[i] + 1) + '"></i> ' +
+            (grades[i-1] ? grades[i]: '<'+ grades[i+1]+ '<br>' + '<br>') + (grades[i + 1] && grades[i-1] ?  '&ndash;' + grades[i + 1] + '<br>' + '<br>': (grades[i-1] ?'+':''));
+    }
+
+    return div;
+};
+
+// Dog Legend
+var doglegend = L.control({position: 'bottomright'});
+
+doglegend.onAdd = function () {
+
+    var div = L.DomUtil.create('div', 'info legend'),
+        grades = [1, 30, 35, 40, 45, 50],
+        labels = [];
+    
+    // loop through our density intervals and generate a label with a colored square for each interval
+    div.innerHTML += '<p><strong> Dog Ownership % </strong></p>';
+    for (var i = 0; i < grades.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + getColordogs(grades[i] + 1) + '"></i> ' +
+            (grades[i-1] ? grades[i]: '<'+ grades[i+1]+ '<br>' + '<br>') + (grades[i + 1] && grades[i-1] ?  '&ndash;' + grades[i + 1] + '<br>' + '<br>': (grades[i-1] ?'+':''));
+    }
+
+    return div;
+};
+
+// Cats Legend
+var catlegend = L.control({position: 'bottomright'});
+
+catlegend.onAdd = function () {
+
+    var div = L.DomUtil.create('div', 'info legend'),
+        grades = [1, 20, 25, 30, 35, 40],
+        labels = [];
+    
+    // loop through our density intervals and generate a label with a colored square for each interval
+    div.innerHTML += '<p><strong> Cat Ownership % </strong></p>';
+    for (var i = 0; i < grades.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + getColorcats(grades[i] + 1) + '"></i> ' +
+            (grades[i-1] ? grades[i]: '<'+ grades[i+1]+ '<br>' + '<br>') + (grades[i + 1] && grades[i-1] ?  '&ndash;' + grades[i + 1] + '<br>' + '<br>': (grades[i-1] ?'+':''));
+    }
+
+    return div;
+};
+
+// Income Legend
+var incomelegend = L.control({position: 'bottomright'});
+
+incomelegend.onAdd = function () {
+
+    var div = L.DomUtil.create('div', 'info legend'),
+        grades = [1, 50000, 55000, 60000, 65000, 7000, 75000, 80000],
+        labels = [];
+    
+    div.innerHTML += '<p><strong> Average Household Income ($)</strong></p>';
+    // loop through our density intervals and generate a label with a colored square for each interval
+    for (var i = 0; i < grades.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + getColorincome(grades[i] + 1) + '"></i> ' +
+            (grades[i-1] ? grades[i]: '<'+ grades[i+1]+ '<br>' + '<br>') + (grades[i + 1] && grades[i-1] ?  '&ndash;' + grades[i + 1] + '<br>' + '<br>': (grades[i-1] ?'+':''));
+    }
+
+    return div;
+};
+
+// Crime Legend
+var crimelegend = L.control({position: 'bottomright'});
+
+crimelegend.onAdd = function () {
+
+    var div = L.DomUtil.create('div', 'info legend'),
+        grades = [1, 5000, 10000, 20000, 25000, 50000, 75000, 100000],
+        labels = [];
+    
+    div.innerHTML += '<p><strong> Incidents of Violent Crime </strong></p>';
+    // loop through our density intervals and generate a label with a colored square for each interval
+    for (var i = 0; i < grades.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + getColorcrime(grades[i] + 1) + '"></i> ' +
+            (grades[i-1] ? grades[i]: '<'+ grades[i+1]+ '<br>' + '<br>') + (grades[i + 1] && grades[i-1] ?  '&ndash;' + grades[i + 1] + '<br>' + '<br>': (grades[i-1] ?'+':''));
+    }
+
+    return div;
+};
+
+// University Legend
+var collegelegend = L.control({position: 'bottomright'});
+
+collegelegend.onAdd = function () {
+
+    var div = L.DomUtil.create('div', 'info legend'),
+        grades = [1, 2, 4, 6, 8, 10],
+        labels = [];
+    
+    div.innerHTML += '<p><strong> Number of Ranked Universities </strong></p>';
+    // loop through our density intervals and generate a label with a colored square for each interval
+    for (var i = 0; i < grades.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + getColorcollege(grades[i] + 1) + '"></i> ' +
+            (grades[i-1] ? grades[i]: '<'+ grades[i+1]+ '<br>' + '<br>') + (grades[i + 1] && grades[i-1] ?  '&ndash;' + grades[i + 1] + '<br>' + '<br>': (grades[i-1] ?'+':''));
+    }
+
+    return div;
+};
+
+// University Legend
+var parkslegend = L.control({position: 'bottomright'});
+
+parkslegend.onAdd = function () {
+
+    var div = L.DomUtil.create('div', 'info legend'),
+        grades = [1, 10, 20, 30, 50, 75, 100],
+        labels = [];
+    
+    div.innerHTML += '<p><strong> Number of State Parks </strong></p>';
+    // loop through our density intervals and generate a label with a colored square for each interval
+    for (var i = 0; i < grades.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + getColorparks(grades[i] + 1) + '"></i> ' +
+            (grades[i-1] ? grades[i]: '<'+ grades[i+1]+ '<br>' + '<br>') + (grades[i + 1] && grades[i-1] ?  '&ndash;' + grades[i + 1] + '<br>' + '<br>': (grades[i-1] ?'+':''));
+    }
+
+    return div;
+};
 
 // Layers established
 var happiness = L.layerGroup([happy])
@@ -290,16 +428,69 @@ var overlayMaps = {
 
 var layerControl = new L.control.layers(null, overlayMaps).addTo(map);
 
-// Marker based on happiness levels
-var happyface = L.icon({
-    iconUrl: '../Resources/smiley.png',
-    });
+map.on('overlayadd', function (eventLayer) {
+    if (eventLayer.name === "Happiness Score (%)") {
+        happinesslegend.addTo(map);
+    }
+    else if (eventLayer.name === "Pet Ownership (%)") {
+        petslegend.addTo(map);
+    }
+    else if (eventLayer.name === "Dog Ownership (%)") {
+        doglegend.addTo(map);
+    }
+    else if (eventLayer.name === "Cat Ownership (%)") {
+        catlegend.addTo(map);
+    }
+    else if (eventLayer.name === "Average Household Income ($)") {
+        incomelegend.addTo(map);
+    }
+    else if (eventLayer.name === "Incidents of Violent Crime") {
+        crimelegend.addTo(map);
+    }
+    else if (eventLayer.name === "Number of Ranked Universities") {
+        collegelegend.addTo(map);
+    }
+    else if (eventLayer.name === "Number of State Parks") {
+        parkslegend.addTo(map);
+    }
+  })
+  map.on('overlayremove', function (eventLayer) {
+    if (eventLayer.name === "Happiness Score (%)") {
+        map.removeControl(happinesslegend);
+    }
+    else if (eventLayer.name === "Pet Ownership (%)") {
+        map.removeControl(petslegend);
+    }
+    else if (eventLayer.name === "Dog Ownership (%)") {
+        map.removeControl(doglegend);
+    }
+    else if (eventLayer.name === "Cat Ownership (%)") {
+        map.removeControl(catlegend);
+    }
+    else if (eventLayer.name === "Average Household Income ($)") {
+        map.removeControl(incomelegend);
+    }
+    else if (eventLayer.name === "Incidents of Violent Crime") {
+        map.removeControl(crimelegend);
+    }
+    else if (eventLayer.name === "Number of Ranked Universities") {
+        map.removeControl(collegelegend);
+    }
+    else if (eventLayer.name === "Number of State Parks") {
+        map.removeControl(parkslegend);
+    }
+  })
 
-// Struggling to dynamically size images and may not be centered on lat/lng
-for (var i = 0; i < parksHapiness.features.length; i++) {
-    L.marker([parksHapiness.features[i].properties.center_latitude, parksHapiness.features[i].properties.center_longitude], {
-      opacity: 0.5,
-      icon: happyface,
-      iconWidth: parksHapiness.features[i].properties["Happiness Score"]
-    }).addTo(map);
-  }
+// // Marker based on happiness levels
+// var happyface = L.icon({
+//     iconUrl: '../Resources/smiley.png',
+//     });
+
+// // Struggling to dynamically size images and may not be centered on lat/lng
+// for (var i = 0; i < parksHapiness.features.length; i++) {
+//     L.marker([parksHapiness.features[i].properties.center_latitude, parksHapiness.features[i].properties.center_longitude], {
+//       opacity: 0.5,
+//       icon: happyface,
+//       iconWidth: parksHapiness.features[i].properties["Happiness Score"]
+//     }).addTo(map);
+//   }
