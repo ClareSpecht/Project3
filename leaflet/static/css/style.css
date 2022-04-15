@@ -7,14 +7,14 @@ body {
 #map,
 body,
 html {
-  height: 100%;
+  height: 85%;
 }
 
 .legend {
   line-height: 18px;
   color: #555;
-  width: 100px;
-  height: 250px;
+  width: 150px;
+  height: 325px;
 }
 .legend i {
   width: 18px;
