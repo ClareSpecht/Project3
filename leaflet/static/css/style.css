@@ -11,11 +11,16 @@ html {
 }
 
 .legend {
-  line-height: 18px;
+  font-family: Arial, sans-serif;
+  border: 2px solid #b8b8b8; 
+  height: 18px;
   color: #555;
-  width: 150px;
-  height: 325px;
+  padding: 8px;
+  margin: 8px;
+  height: auto;
+  display: inline-block;
 }
+
 .legend i {
   width: 18px;
   height: 18px;
