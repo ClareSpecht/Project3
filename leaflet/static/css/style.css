@@ -7,7 +7,11 @@ body {
 #map,
 body,
 html {
-  height: 85%;
+  height: 100%;
+}
+
+#myChart {
+  height: 85%
 }
 
 .legend {
