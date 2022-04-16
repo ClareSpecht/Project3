@@ -492,8 +492,7 @@ var happyface = L.icon({
     L.marker([parksHapiness.features[i].properties.center_latitude, parksHapiness.features[i].properties.center_longitude], {
        opacity: 0.65,
        icon: happyface,
-       iconWidth: parksHapiness.features[i].properties["Happiness Score"]
-     }).bindPopup("<h1>" +  parksHapiness.features[i].properties.name + "</h1> <hr> <h2>" + " Violent Crime: " + parksHapiness.features[i].properties.Crime + "</h2> <hr> <h2>"  + " Dog Ownership: " + parksHapiness.features[i].properties["dog ownership"] + "</h2> <hr> <h2>" + " Cat Ownership: " + parksHapiness.features[i].properties["cat ownership"] + "</h2>").addTo(happiness);
+     }).bindPopup("<h3>" +  parksHapiness.features[i].properties.name + "</h3> <hr> <h4>" + " Happiness Rank: " + parksHapiness.features[i].properties["Happiness_Rank"] + "</h4> <h4>"  + " Emotional & Physical Wellbeing Rank: " + parksHapiness.features[i].properties["Emotional_&_Physical_Well-Being_Rank"] + "</h4> <h4>" + " Work Environment Rank: " + parksHapiness.features[i].properties["Work_Environment_Rank"] + "</h4>").addTo(happiness);
     }
 
 //pets marker
@@ -505,11 +504,10 @@ var peticon = L.icon({
     L.marker([parksHapiness.features[i].properties.center_latitude, parksHapiness.features[i].properties.center_longitude], {
        opacity: 0.65,
        icon: peticon,
-       iconWidth: parksHapiness.features[i].properties["Happiness Score"]
-     }).bindPopup("<h1>" +  parksHapiness.features[i].properties.name + "</h1> <hr> <h2>" + " Violent Crime: " + parksHapiness.features[i].properties.Crime + "</h2> <hr> <h2>"  + " Dog Ownership: " + parksHapiness.features[i].properties["dog ownership"] + "</h2> <hr> <h2>" + " Cat Ownership: " + parksHapiness.features[i].properties["cat ownership"] + "</h2>").addTo(pets);
+     }).bindPopup("<h3>" +  parksHapiness.features[i].properties.name + "</h3> <hr> <h4>" + " Pet Ownership % :  " + parksHapiness.features[i].properties["pet ownership"] + "</h4>").addTo(pets);
     }
 
-//pets marker
+//dogs marker
 var dogicon = L.icon({
     iconUrl: '../Resources/dog.png',
     });
@@ -518,10 +516,10 @@ var dogicon = L.icon({
     L.marker([parksHapiness.features[i].properties.center_latitude, parksHapiness.features[i].properties.center_longitude], {
        opacity: 0.65,
        icon: dogicon,
-       iconWidth: parksHapiness.features[i].properties["Happiness Score"]
-     }).bindPopup("<h1>" +  parksHapiness.features[i].properties.name + "</h1> <hr> <h2>" + " Violent Crime: " + parksHapiness.features[i].properties.Crime + "</h2> <hr> <h2>"  + " Dog Ownership: " + parksHapiness.features[i].properties["dog ownership"] + "</h2> <hr> <h2>" + " Cat Ownership: " + parksHapiness.features[i].properties["cat ownership"] + "</h2>").addTo(dogs);
+     }).bindPopup("<h3>" +  parksHapiness.features[i].properties.name + "</h3> <hr> <h4>" + " Dog Ownership % :  " +  parksHapiness.features[i].properties["dog ownership"] + "</h4>").addTo(dogs);
     }
 
+//cat marker
 var caticon = L.icon({
     iconUrl: '../Resources/cat.png',
     });
@@ -530,8 +528,7 @@ var caticon = L.icon({
     L.marker([parksHapiness.features[i].properties.center_latitude, parksHapiness.features[i].properties.center_longitude], {
        opacity: 0.65,
        icon: caticon,
-       iconWidth: parksHapiness.features[i].properties["Happiness Score"]
-     }).bindPopup("<h1>" +  parksHapiness.features[i].properties.name + "</h1> <hr> <h2>" + " Violent Crime: " + parksHapiness.features[i].properties.Crime + "</h2> <hr> <h2>"  + " Dog Ownership: " + parksHapiness.features[i].properties["dog ownership"] + "</h2> <hr> <h2>" + " Cat Ownership: " + parksHapiness.features[i].properties["cat ownership"] + "</h2>").addTo(cats);
+     }).bindPopup("<h3>" +  parksHapiness.features[i].properties.name + "</h3> <hr> <h4>" + " Cat Ownership % :  " +  parksHapiness.features[i].properties["cat ownership"] + "</h4>").addTo(cats);
     }
 
 var cashmoney = L.icon({
@@ -542,8 +539,7 @@ var cashmoney = L.icon({
     L.marker([parksHapiness.features[i].properties.center_latitude, parksHapiness.features[i].properties.center_longitude], {
        opacity: 0.65,
        icon: cashmoney,
-       iconWidth: parksHapiness.features[i].properties["Happiness Score"]
-     }).bindPopup("<h1>" +  parksHapiness.features[i].properties.name + "</h1> <hr> <h2>" + " Violent Crime: " + parksHapiness.features[i].properties.Crime + "</h2> <hr> <h2>"  + " Dog Ownership: " + parksHapiness.features[i].properties["dog ownership"] + "</h2> <hr> <h2>" + " Cat Ownership: " + parksHapiness.features[i].properties["cat ownership"] + "</h2>").addTo(income);
+    }).bindPopup("<h3>" +  parksHapiness.features[i].properties.name + "</h3> <hr> <h4>" + " Household Income: "  +  parksHapiness.features[i].properties["HouseholdIncome"] + "</h4> <h4>" + " Income Rank: "  +  parksHapiness.features[i].properties["inc_rank"] + "</h4>").addTo(income);
     }
 
 var violence = L.icon({
@@ -554,8 +550,7 @@ for (var i = 0; i < parksHapiness.features.length; i++) {
     L.marker([parksHapiness.features[i].properties.center_latitude, parksHapiness.features[i].properties.center_longitude], {
        opacity: 0.65,
        icon: violence,
-       iconWidth: parksHapiness.features[i].properties["Happiness Score"]
-     }).bindPopup("<h1>" +  parksHapiness.features[i].properties.name + "</h1> <hr> <h2>" + " Violent Crime: " + parksHapiness.features[i].properties.Crime + "</h2> <hr> <h2>"  + " Dog Ownership: " + parksHapiness.features[i].properties["dog ownership"] + "</h2> <hr> <h2>" + " Cat Ownership: " + parksHapiness.features[i].properties["cat ownership"] + "</h2>").addTo(crime);
+     }).bindPopup("<h3>" +  parksHapiness.features[i].properties.name + "</h3> <hr> <h4>" + " Incidents of Violent Crime: "  +  parksHapiness.features[i].properties["Crime"] + "</h4><h4>" + " Violent Crime Rank: "  +  parksHapiness.features[i].properties["crime_rank"] + "</h4>").addTo(crime);
     }
 
 //colleges marker
@@ -567,7 +562,7 @@ for (var i = 0; i < parksHapiness.features.length; i++) {
     L.marker([parksHapiness.features[i].properties.center_latitude, parksHapiness.features[i].properties.center_longitude], {
       opacity: 0.65,
       icon: books,
-    }).bindPopup("<h1>" +  parksHapiness.features[i].properties.name + "</h1> <hr> <h2>" + " Violent Crime: " + parksHapiness.features[i].properties.Crime + "</h2> <hr> <h2>"  + " Dog Ownership: " + parksHapiness.features[i].properties["dog ownership"] + "</h2> <hr> <h2>" + " Cat Ownership: " + parksHapiness.features[i].properties["cat ownership"] + "</h2>").addTo(college);
+    }).bindPopup("<h3>" +  parksHapiness.features[i].properties.name + "</h3> <hr> <h4>" + " Number of Ranked Universities:  " +  parksHapiness.features[i].properties["University"] + "</h4>").addTo(college);
    }
 //tree icon marker
    var tree = L.icon({
@@ -578,5 +573,5 @@ for (var i = 0; i < parksHapiness.features.length; i++) {
     L.marker([parksHapiness.features[i].properties.center_latitude, parksHapiness.features[i].properties.center_longitude], {
       opacity: 0.65,
       icon: tree,
-    }).bindPopup("<h1>" +  parksHapiness.features[i].properties.name + "</h1> <hr> <h2>" + " Violent Crime: " + parksHapiness.features[i].properties.Crime + "</h2> <hr> <h2>"  + " Dog Ownership: " + parksHapiness.features[i].properties["dog ownership"] + "</h2> <hr> <h2>" + " Cat Ownership: " + parksHapiness.features[i].properties["cat ownership"] + "</h2>").addTo(parks);
+    }).bindPopup("<h3>" +  parksHapiness.features[i].properties.name + "</h3> <hr> <h4>" + " Overall Park Rank: " + parksHapiness.features[i].properties["park_rank"] + "</h4><h4>"  + " Number of State Parks: " + parksHapiness.features[i].properties["State Parks"] + "</h4> <h4>" + " Number of National Wildlife Refuges: " + parksHapiness.features[i].properties["National Wildlife Refuges"] + "</h4><h4>"  + " Number of National Park and Preserves: " + parksHapiness.features[i].properties["National Park and Preserves"] + "</h4> <h4>" + " Number of State Fishery Areas: " + parksHapiness.features[i].properties["State Fishery Areas"] + "</h4>").addTo(parks);
    }
